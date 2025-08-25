@@ -34,6 +34,6 @@ The prediction results will be stored in the ```./Results``` directory, with sub
 
 | Heavy chain          | Light chain                         | Antigen                     |Predictions      |
 |:-------------------:|:-------------------------------:|:------------------------------:|:------------------------------:|
-|SPRLLI......ASQSIG| WIRKFP......GNKLEY|DNYRGY......SLGNWV|-9.820102|
-|PREEQY......STYRVV|PEVKFN......NWYVDG|FHNESL......SSQASS|-9.166173|
-|FTFSRY......WVRQAP|CSASSS......VHMFWY|IAFLND......KRMDIG|-9.843646|
+|QVQLVQ......LVTVSS| QSVLTQ......TKLTVL|RVQPTE......NKCVNF|0.4819|
+|......|......|......||
+|......|......|......||
