@@ -31,3 +31,9 @@ python predict.py
 The prediction results will be stored in the ```./Results``` directory, with subdirectories named according to the timestamp of the computation.
 
 **6.** Analysis of prediction results.
+
+| Heavy chain          | Light chain                         | Antigen                     |Predictions      |
+|:-------------------:|:-------------------------------:|:------------------------------:|:------------------------------:|
+|SPRLLI......ASQSIG| WIRKFP......GNKLEY|DNYRGY......SLGNWV|-9.820102|
+|PREEQY......STYRVV|PEVKFN......NWYVDG|FHNESL......SSQASS|-9.166173|
+|FTFSRY......WVRQAP|CSASSS......VHMFWY|IAFLND......KRMDIG|-9.843646|
