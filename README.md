@@ -28,4 +28,6 @@ Open ``` config/common/bert_eval_generation.json ``` and update the `data_dir` p
 python predict.py
 ```
 
+The prediction results will be stored in the ```./Results``` directory, with subdirectories named according to the timestamp of the computation.
+
 **6.** Analysis of prediction results.
