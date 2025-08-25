@@ -19,9 +19,12 @@ conda install <the aforementioned packages>
 
 **3.** Download the models.
 
-**4.** Run InterAb with the following command:  
+**4.** Configure your file to be predicted in the JSON file.
+Open ``` config/common/bert_eval_generation.json ``` and update the `data_dir` parameter to specify the path of the input data file intended for prediction.
+
+**5.** Run InterAb with the following command:  
 ```
 python predict.py
 ```
 
-**5.** Analysis of prediction results.
+**6.** Analysis of prediction results.
