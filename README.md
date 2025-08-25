@@ -39,3 +39,9 @@ The prediction results will be stored in the ```./Results``` directory, with sub
 |QVQLVQ......LVTVSS|QSVLTQ......TKLTVL|RVQPTE......NKCVNF|0.8461|
 
 The ```Predictions``` represent the predicted ```log₁₀IC₅₀``` values, where lower values indicate stronger binding affinity.
+
+# Citation and contact
+Citation: preparing
+
+In case you have questions, please contact Yidong Song (songyd6@mail2.sysu.edu.cn).  
+
