@@ -34,9 +34,9 @@ The prediction results will be stored in the ```./Results``` directory, with sub
 
 | Heavy chain          | Light chain                         | Antigen                     |Predictions      |
 |:-------------------:|:-------------------------------:|:------------------------------:|:------------------------------:|
-|QVQLVQ......LVTVSS| QSVLTQ......TKLTVL|RVQPTE......NKCVNF|0.4819|
-|QVQLVQ......LVTVSS|QSVLTQ......TKLTVL|RVQPTE......NKCVNF|0.4413|
-|QVQLVQ......LVTVSS|QSVLTQ......TKLTVL|RVQPTE......NKCVNF|0.8461|
+|QVQ...GLE...VSS| QSV...DRF...TVL|RVQPTE......NKCVNF|0.4819|
+|QVQ...WMG...VSS|QSV...SGV...TVL|RVQPTE......NKCVNF|0.4413|
+|QVQ...SCK...VSS|QSV...TAP...TVL|RVQPTE......NKCVNF|0.8461|
 
 The ```Predictions``` represent the predicted ```log₁₀IC₅₀``` values, where lower values indicate stronger binding affinity.
 
