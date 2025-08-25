@@ -7,7 +7,7 @@ The model extracts sequence features from the heavy and light chains of antibodi
 InterAb is developed under Linux environment with:
 Python 3.8.16, pyg v2.3.0, numpy v1.24.3, pytorch v1.13.1, biopython v1.83, decorator v5.1.1, scipy 1.10.1, filelock, v3.12.1, gmp v6.2.1, idna v3.4, ipython v8.12.0, openfold v1.0.1, and six v1.16.0
 
-# Install and run the program
+# Install and run the model
 **1.** Clone this repository by 'git clone https://github.com/YidongSong/Ab-Ag-AFF.git'.
 
 **2.** Install the aforementioned packages.
@@ -20,8 +20,8 @@ conda install <the aforementioned packages>
 **3.** Download the models.
 
 **4.** Run InterAb with the following command:  
-'''
+```
 python predict.py
-'''
+```
 
 **5.** Analysis of prediction results.
