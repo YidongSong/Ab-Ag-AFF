@@ -18,6 +18,7 @@ conda install <the aforementioned packages>
 ```
 
 **3.** Download the models.
+
 The pre-trained model weights were obtained from https://zenodo.org/records/16974510. Specifically, ```ESM_models.tar.gz``` was decompressed into the directory ```./esm2```, while ```Ab_Ag_AFF.tar.gz```, ```antibody_tokenizer.tar.gz```, ```heavy.tar.gz```, and ```light.tar.gz``` were extracted to ```./model``` to ensure proper model loading and inference.
 
 **4.** Configure your file to be predicted in the JSON file.
