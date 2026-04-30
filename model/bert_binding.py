@@ -301,6 +301,15 @@ class Ab_Ag_AFF(nn.Module):
         )
 
     def forward(self, heavy, light, antigen, device):
+        # Using the pre-trained RoFormerm model
+        # heavy_encoded = self.HeavyModel(**heavy).last_hidden_state 
+        # light_encoded = self.LightModel(**light).last_hidden_state 
+        # antigen_encoded = self.AntigenModel(**antigen).last_hidden_state
+        # heavy_cls = self.cnn1(heavy_encoded)
+        # light_cls = self.cnn2(light_encoded)
+        
+
+        # Using the pre-trained ESM2 model
         heavy_esm2 = {}
         light_esm2 = {}
         heavy_esm2['input_ids'] = heavy['input_ids']
@@ -312,6 +321,7 @@ class Ab_Ag_AFF(nn.Module):
         antigen_encoded = self.AntigenModel(**antigen).last_hidden_state 
         heavy_cls = self.cnn1_esm2(heavy_encoded)
         light_cls = self.cnn2_esm2(light_encoded)
+            
         antigen_cls = self.cnn3(antigen_encoded)
 
         concated_encoded = torch.concat((heavy_cls,light_cls,antigen_cls) , dim = 1)
