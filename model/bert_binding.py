@@ -302,25 +302,25 @@ class Ab_Ag_AFF(nn.Module):
 
     def forward(self, heavy, light, antigen, device):
         # Using the pre-trained RoFormerm model
-        # heavy_encoded = self.HeavyModel(**heavy).last_hidden_state 
-        # light_encoded = self.LightModel(**light).last_hidden_state 
-        # antigen_encoded = self.AntigenModel(**antigen).last_hidden_state
-        # heavy_cls = self.cnn1(heavy_encoded)
-        # light_cls = self.cnn2(light_encoded)
+        heavy_encoded = self.HeavyModel(**heavy).last_hidden_state 
+        light_encoded = self.LightModel(**light).last_hidden_state 
+        antigen_encoded = self.AntigenModel(**antigen).last_hidden_state
+        heavy_cls = self.cnn1(heavy_encoded)
+        light_cls = self.cnn2(light_encoded)
         
 
         # Using the pre-trained ESM2 model
-        heavy_esm2 = {}
-        light_esm2 = {}
-        heavy_esm2['input_ids'] = heavy['input_ids']
-        heavy_esm2['attention_mask'] = heavy['attention_mask']
-        light_esm2['input_ids'] = light['input_ids']
-        light_esm2['attention_mask'] = light['attention_mask']
-        heavy_encoded = self.AntigenModel(**heavy_esm2).last_hidden_state 
-        light_encoded = self.AntigenModel(**light_esm2).last_hidden_state 
-        antigen_encoded = self.AntigenModel(**antigen).last_hidden_state 
-        heavy_cls = self.cnn1_esm2(heavy_encoded)
-        light_cls = self.cnn2_esm2(light_encoded)
+        # heavy_esm2 = {}
+        # light_esm2 = {}
+        # heavy_esm2['input_ids'] = heavy['input_ids']
+        # heavy_esm2['attention_mask'] = heavy['attention_mask']
+        # light_esm2['input_ids'] = light['input_ids']
+        # light_esm2['attention_mask'] = light['attention_mask']
+        # heavy_encoded = self.AntigenModel(**heavy_esm2).last_hidden_state 
+        # light_encoded = self.AntigenModel(**light_esm2).last_hidden_state 
+        # antigen_encoded = self.AntigenModel(**antigen).last_hidden_state 
+        # heavy_cls = self.cnn1_esm2(heavy_encoded)
+        # light_cls = self.cnn2_esm2(light_encoded)
             
         antigen_cls = self.cnn3(antigen_encoded)
 
