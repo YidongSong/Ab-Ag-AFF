@@ -42,7 +42,7 @@
       "weight_decay": 0
     }
   },
-  "loss": "bce_withlogits_loss",
+  "loss": "mse_loss",
   "metrics": [
     "accuracy",
     "recall",
