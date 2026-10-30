@@ -34,7 +34,7 @@
       "emb_dim": 256
     }
   },
-  "discriminator_resume": "./model/Ab_Ag_AFF.pth",
+  "discriminator_resume": "./model/model_best.pth",
   "optimizer": {
     "type": "AdamW",
     "args": {
